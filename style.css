@@ -1,0 +1,79 @@
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+main{
+    font-family: Avenir, Roboto, Helvetica, san-serif;
+    font-size: 0.8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1rem;
+
+}
+
+article {
+    display: flex;
+    flex-flow: column;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+h1 {
+    font-family: arial, sans-serif;
+}
+
+.container>h1{
+    grid-column: 1/-1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    background-color: black;
+/*    background-color: hsl(210, 100%, 15%);*/
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 10px 0px;
+}
+
+li a {
+    font-family: futura;
+    color: white;
+    font-size: 16pt;
+    display: block;
+    padding: 8px 0px;
+    text-decoration: none;
+}
+
+/* unvisited link*/
+li a:link {
+    color: white;
+}
+
+/*visited link */
+li a:visited {
+    color: white;
+}
+
+/*mouse over link*/
+li a:hover {
+    border-bottom: 3px solid;
+    color: grey;
+}
+
+/*selected link*/
+li a:active {
+    color: grey;
+}
+
+
+
+
+
